@@ -11,10 +11,7 @@ Solidity propose plusieurs types élémentaires qui peuvent être combinés pour
 
 De plus, les types peuvent interagir entre eux dans des expressions contenant des opérateurs. Pour une liste synthétique des différents opérateurs, voir :ref:`order`.
 
-The concept of "undefined" or "null" values does not exist in Solidity, but newly
-declared variables always have a :ref:`default value<default-value>` dependent
-on its type. To handle any unexpected values, you should use the :ref:`revert function<assert-and-require>` to revert the whole transaction, or return a
-tuple with a second ``bool`` value denoting success.
+Le concept de valeurs "indéfinies" ou "nulles" n'existe pas dans Solidity, mais les variables nouvellement déclarées ont toujours une :ref:`valeur par défaut<default-value>` qui dépend de son type. Pour gérer les valeurs inattendues, vous devriez utiliser la :ref:`fonction revert<assert-and-require>`pour annuler la transaction dans son ensemble, ou renvoyer un tuple avec une seconde valeur ``bool`` indiquant le succès de la transaction.
 
 .. include:: types/value-types.rst
 
